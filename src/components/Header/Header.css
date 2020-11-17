@@ -1,0 +1,58 @@
+.header {
+  height: 8rem;
+  background-color: #6c757d;
+  color: aliceblue;
+  position: relative;
+}
+.header-container {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
+.header-container__logo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 3px;
+  transition: all 0.2s;
+  background-image: linear-gradient(to right, #495057, #212529);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header-container__search-bar {
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-container__search-bar {
+    margin-left: 0;
+    }
+
+  .header {
+    height: 12rem;
+  }
+
+  form {
+    width: 29rem;
+  }
+
+  form:hover {
+    width: 29rem;
+    cursor: pointer;
+  }
+
+  input {
+    font-size: 0.6em;
+  }
+}
